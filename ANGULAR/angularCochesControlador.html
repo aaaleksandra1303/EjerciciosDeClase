@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+<head>
+    <title>Coches</title>
+   <script src='angular.min.js'></script>
+   <script src='coches.js'></script>
+
+   <style type="text/css">
+       body{
+        display: inline-block;
+       }
+   </style>
+</head>
+<body>
+    <div ng-controller="cochesController">
+        Marca: <input type="text"  ng-model="coche.marca"><br>
+        Model: <input type="text" ng-model="coche.model">
+        <label>El coche es {{coche.marca}}</label>
+
+    </div>
+
+    <script type="text/javascript">
+        
+        function cochesController($scope){
+            $scope.coche={
+                marca:'Audi',
+                modelo: 'A5',
+               }
+
+                nombreCompleto:function(){
+                    var x=$scope.coche;
+                    return x.marca + x.modelo;
+                }
+            }
+        
+    </script>
+
+
+
+</body>
+</html>

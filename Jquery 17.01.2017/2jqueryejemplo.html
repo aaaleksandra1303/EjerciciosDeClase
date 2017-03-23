@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery1 cambia estilo de documntos</title>
+    <script type="text/javascript" src="jquery.js" ></script>
+    <style type="text/css">
+        
+        .tomarFoco{
+            color:red;
+        }
+        .perderFoco{
+            color: grey;
+        }
+        .fondo{
+            background-color: #58F4C7;
+
+        }
+
+    </style>
+    <script type="text/javascript">
+      
+       
+ 
+    
+      $(document).ready(function(){
+
+
+                   // $( "input" ).addClass( "tomarFoco").focus();
+                 //   $( "input" ).addClass( "perderFoco" ).blur();
+
+                // $( "input" ).focus().addClass( "tomarFoco" );
+               //   $( "input" ).blur().addClass( "perderFoco" );
+
+               //$("input").addClass("tomarFoco",focus());
+               //$("input").addClass("perderFoco",blur());
+               
+                 $("input").blur( function()
+                    {$(this).addClass("perderFoco");
+                } );
+
+
+                $("input").focus(function()
+                {
+                    $(this).addClass("tomarFoco");
+                });
+            
+                   $("input").mouseover( function()
+                    {$(this).addClass("fondo");
+                } );
+
+                    $("input").mouseout( function()
+                    {$(this).removeClass("fondo");
+                } );
+     });
+           
+
+    </script>
+
+</head>
+<body>
+
+    <label>Nombre</label>
+    <input  type="input" name="nombre">
+    <label>Appellido</label>
+    <input   type="input" name="">
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "Producto1": {
+    "id": 1,
+    "nombre": "Escoba",
+    "precio": 1.01,
+    "disponible": true
+  },
+  "Prducto2": {
+    "id": 2,
+    "nombre": "MOTO",
+    "precio": 2.2,
+    "disponible": false
+  },
+  "producto5": {
+    "id": 5,
+    "nombre": "tomate",
+    "precio": 50,
+    "disponible": false
+  },
+  "producto6": {
+    "id": 6,
+    "nombre": "camisa",
+    "precio": 50,
+    "disponible": false
+  },
+  "producto8": {
+    "id": 8,
+    "nombre": "camiseta",
+    "precio": 50,
+    "disponible": true
+  },
+  "productoNaN": {
+    "id": null,
+    "nombre": "",
+    "precio": null,
+    "disponible": true
+  }
+}

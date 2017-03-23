@@ -1,0 +1,11 @@
+do{
+		var newName = prompt("Introduce un nuevo nombre");
+		if(newName == ""){
+			break;
+		}else{
+			var newElementList = document.createElement("li");
+			newElementList.innerHTML = newName;
+			var listNode = document.getElementsByTagName("ul");
+			listNode[0].appendChild(newElementList);
+		}
+	}while(newName != "")

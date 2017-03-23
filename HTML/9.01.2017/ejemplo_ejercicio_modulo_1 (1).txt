@@ -1,0 +1,121 @@
+Class Agenda{
+	Integer contactos []
+	Integer cantidad
+	Integer max
+
+	Agenda(){
+		cantidad = 0
+		max = 20
+	}
+
+	Agenda(Integer n){
+		cantidad = 0 
+		max = n
+	}
+
+	AnadirContacto(String nombre){
+		if (QuedaEspacio()){
+			contactos[cantidad] = nombre
+			cantidad++
+		}
+		else{
+			Print "Se ha llegado al límite de contactos."
+		}
+
+	}
+
+	EliminarContacto(Integer pos){
+		if (pos < cantidad && pos >= 0){
+			for (Integer i = pos ; i < cantidad ; i++){
+				contactos [i] = contactos[i + 1]
+			}
+			cantidad--
+		}
+		else{
+			Print "No ha introducido una posición válida o no hay ningún contacto en esa posición"
+		}
+	}
+
+	BuscarContacto(Integer pos){
+		if (pos < cantidad && pos >=0){
+			Print "El contacto situado en la posición ", pos, "es", contactos[pos]
+		}
+		else{
+			Print "No ha introducido una posición válida o no hay ningún contacto en esa posición"
+		}
+	}
+
+	//Devuelve un valor booleano
+	QuedaEspacio(){
+		if (cantidad >= max){
+			return False
+		}
+		else{
+			return True
+		} 
+	}
+}
+
+Inicio(){
+	Boolean continuar = True
+	Boolean bucle_salir = True
+	Integer n, pos
+	String nombre
+	gestor = new Agenda()
+
+	while (continuar){
+		Print "1. Añadir contacto"
+		Print "2. Eliminar contacto"
+		Print "3. Buscar contacto"
+		Print "4. Salir"
+
+		Leer (n)
+
+		switch (n){
+			case 1: 
+				if (gestor.QuedaEspacio()){
+					Print "Introduzca el nombre a guardar"
+					gestor.AnadirContacto(Leer nombre)
+				}
+				else{
+					Print "No queda espacio en la agenda."
+				}
+
+			case 2:
+				Print "Introduzca la posición del contacto a eliminar"
+				gestor.EliminarContacto(Leer n)
+
+			case 3:
+				Print "Introduzca la posición del contacto a mostrar"
+				gestor.BuscarContacto(Leer n)
+			
+			case 4:
+				bucle_salir = true
+				
+				while (bucle_salir){
+					Print "¿Está seguro de que desea salir?"
+					Print "1. Sí"
+					Print "2. No"
+
+					Leer n
+
+					switch (n){
+						case 1:
+							bucle_salir = false
+							continuar = false
+							Print "Saliendo"
+						case 2:
+							bucle_salir = false 
+
+						default:
+							Print "Introduzca un valor válido (1-2)"
+					
+				}
+			}
+
+			default:
+				Print "Introduzca un valor válido (1-4)"
+			
+		}
+	}
+}

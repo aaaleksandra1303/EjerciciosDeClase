@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<style type="text/css">
+	.gray{
+		background-color: lightgray;
+	};
+	.blue{
+		background-color: lightblue;
+	}
+	.yellow{
+		background-color: yellow;
+	}
+	</style>
+	<script type="text/javascript">
+
+		$(document).ready(function()
+		{
+			$("p").click(function()
+			{
+				$("#click").hide();
+			});
+			$("p").dblclick(function()
+			{
+				$("#dbclick").hide();
+			});
+		/*	$("#mouseenter").mouseenter(function(){
+				alert("You entered en p3!");
+
+			});
+			$("#mouseleave").mouseleave(function(){
+				alert("Bye you leave p4");
+			});
+		
+
+			$("#mousedown").mousedown(function(){
+
+				alert("mousedown");
+			});
+
+			$("#mouseup").mouseup(function(){
+        		alert("moueseup");
+			});
+
+			$("#hover").hover(function(){
+    			alert("You entered p1!");
+				},
+				function(){
+   				alert("Bye! You now leave p1!");
+			});
+
+			*/
+
+			$("input").focus(function(){
+				$(this).css("background-color", "#cccccc");
+			});
+
+			$("input").blur(function(){
+				 $(this).css("background-color", "#ffffff");
+			});
+
+			$("#click").on("click",function(){
+				$(this).hide();
+			});
+
+			$("p").on({
+				mouseenter:function(){
+					$(this).css("background-color","lightgray");
+				}, 
+				mouseleave:function(){
+					$(this).css("background-color","lightblue");
+				},
+				click:function(){
+					$(this).css("background-color","yellow");
+				}
+			})
+
+		});
+		
+
+	</script>
+</head>
+<body>
+	<p id="click">1 bfshfiusefhuisehf</p>
+	<p id="dbclick">2 bfshfiusefhuisehf</p>
+	<p id="mouseenter">3 bfshfiusefhuisehf</p>
+	<p id="mouseleave">4 bfshfiusefhuisehf</p>
+	<p id="mousedown">5 dfgdgdfgdfgdgfg</p>
+	<p id="mouseup">6 sdfsdfsdfsdfsfs</p>
+	<p id="hover">7 sdfsdfsdfsdfsfs</p>
+	<input type="input" ></input>
+
+</body>
+</html>

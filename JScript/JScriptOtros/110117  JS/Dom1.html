@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+	<script type="text/javascript">
+	function myFunction(){
+
+		var parrafos = document.activeElement.tagName;
+		document.getElementById("p").innerHTML=parrafos;
+
+    for (i=0; i<parrafos.length; i++)
+   	 	{
+        alert("hej"+parrafos[i].textContent);
+    	}
+	}
+		
+
+	</script>
+	
+</head>
+<body onclick="myFunction()">
+
+	
+
+	<p id="p">HEj</p>
+	<p id="p">lfjsdofhsdhf sdfh sodfihsdo</p>
+	<p id="p">fakhskfhishfiwfkjsfksdfsiudhfsduhfsdhfksjhfskdjv vdsdfs</p>
+
+</body>
+</html>

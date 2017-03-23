@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Angular ejemplo</title>
+    <script src='angular.min.js'></script>
+
+  
+</head>
+<body>
+
+    <label>Name:</label>
+    <input type="text" name="name" ng-model="name" placeholder="introduzca tu nombre"/>
+    <label>Last Name:</label>
+    <input type="text" name="lastname" ng-model="lastname" placeholder="introduze tu appellido"/>
+    <p> Hello {{name}} {{lastname}}!</p>
+
+    
+
+     <label>Donde vives?</label>
+     <br>
+        
+        <input ng-init="city='a'" type="radio" data-ng-model="city" name="city" value="a" checked="">Alicante
+        <br>
+        <input type="radio" data-ng-model="city" name="city" value="Alcoy" >Alcoy
+        <br>
+        <input type="radio" data-ng-model="city" name="city" value="Otro">Otro
+        <br>
+        <input type="text"  ng-show="city == 'o'">
+       
+
+     
+        <p>{{city==}}</p>
+      
+       
+        
+</body>
+</html>

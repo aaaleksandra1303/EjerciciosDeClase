@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>check cookies</title>
+	<script type="text/javascript">
+		function checkCookies() {
+			var text="";
+			if(navigator.cookieEnabled==true){
+				text="Cookies are enabled";
+				}
+				else{
+					text="Cookies are not enabled";
+				}
+
+				document.getElementById("demo").innerHTML=text;
+		}
+			
+	</script>
+</head>
+<body onload="checkCookies()">
+
+	<p id="demo"></p>
+
+</body>
+</html>

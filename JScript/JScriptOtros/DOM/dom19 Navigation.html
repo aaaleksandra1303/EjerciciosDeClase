@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="demo">DOM tutorial</title>
+	<script type="text/javascript">
+		var myTitle = document.getElementById("demo").innerHTML;
+		alert(myTitle);
+
+		var myTitle2=document.getElementById("demo").firstChild.nodeValue;
+
+		alert(myTitle2);
+
+		var myTitle3=document.getElementById("demo").childNodes[0].nodeValue;
+		alert(myTitle3);
+
+		document.getElementById("id02").innerHTML = document.getElementById("id01").innerHTML;
+	</script>
+</head>
+<body>
+	<h1 id="id01">My first page</h1>
+	<p id="id02">hej</p>
+	<script>
+document.getElementById("id02").innerHTML = document.getElementById("id01").innerHTML;
+</script>
+
+</body>
+</html>

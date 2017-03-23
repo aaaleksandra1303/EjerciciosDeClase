@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de creacion de ventana</title>
+	<script language="JavaScript" type="text/javascript">
+		function AbrirVentana(){	
+			ventana=open("","nueva","toolbar=no,directories=no,menubar=yes,width=180,height=180");
+			ventana.document.write("<HEAD><TITLE>Nueva ventana</TITLE></HEAD><BODY>");
+			ventana.document.write("<FONT SIZE=4 COLOR=red>Nueva ventana</FONT><BR> <BR<BR>>");
+			ventana.document.write("<FORM><INPUT TYPe='button' VALUE='Cerrar' onClick='self.close()'></FORM>");
+		}
+
+	</script>
+</head>
+<body>
+	<form>
+		<input type="button" value="Abrir una ventana " onclick="AbrirVentana();"><br></input>
+	</form>
+
+</body>
+</html>

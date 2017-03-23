@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindromo</title>
+	<script type="text/javascript">
+		
+	var text=prompt("introduzca texto!");
+	alert(text);
+	var textLower=text.toLowerCase();
+	alert(textLower);
+	
+	var textArray=textLower.split("");
+
+	for(i in textArray)
+	{
+		alert(textArray[i]);
+	}
+
+	var textRevers=textArray.reverse();
+	
+	for(i in textRevers){
+		alert(textRevers[i]);
+	}
+
+	for(i=0;i<=textArray.length;i++)
+	{
+		if(textArray[i]==textRevers[i])
+		{
+			alert("es polindromo");
+		}else{
+			alert("no es polindromo");
+		}
+	}
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

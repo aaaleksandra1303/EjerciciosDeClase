@@ -1,0 +1,16 @@
+{
+  "name": "angular-todo",
+  "version": "1.0.0",
+  "description": "\"Simple Angular TODO app based in MEAN stack\",",
+  "main": "index.js",
+  "dependencies": {
+    "express": "~3.x",
+    "mongoose": "^4.7.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

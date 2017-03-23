@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM getElementById</title>
+
+</head>
+<body onclick="myFunction()">
+	<p>Click anywere is the documnet to display the active element.</p>
+	<input type="text" placeholder="An input field"></input>
+	<button>A button</button>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		function myFunction() 
+		{
+
+
+			var x=document.activeElement.tagName;
+			document.getElementById("demo").innerHTML=x;
+			
+			}
+	</script>
+
+
+</body>
+</html>

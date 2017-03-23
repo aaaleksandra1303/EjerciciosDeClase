@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funciones utiles para Array</title>
+	<script type="text/javascript">
+		var vocales=["a","e","i","o","u"];
+		var num = vocales.length;
+		alert("length of array "+num);
+		var a1=[1,2,3];
+		var a2=a1.concat(4,5,6);
+		for(i in a2)
+		{
+			alert(a2[i]);
+		}
+		var a =["hola","mundo"];
+		var men=a.join("");
+		alert(men);
+		var men=a.join(" ");
+		alert(men);
+
+
+		var c=[1,2,3];
+		var u=c.pop();
+		alert("pop "+u);
+
+		c.push(4);
+		for(i in c){
+			alert("push"+c[i]);
+		}
+		c.reverse();
+		for(i in c){
+			alert("reverse"+c[i]);
+		}
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

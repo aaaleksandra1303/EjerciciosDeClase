@@ -1,0 +1,153 @@
+Desarrollo de pseudocódigo
+Realizar un algoritmo para un programa encargado de gestionar una agenda de contactos. Al iniciarse el programa,
+aparecerá el siguiente menú:
+
+1.- Añadir contacto
+2.- Eliminar contacto
+3.- Buscar contacto
+4.- Salir
+
+El funcionamiento de cada opción es el
+siguiente:
+
+• Añadir contacto. Se solicitará el
+nombre del contacto y se guardará.
+Hay un máximo de 20 contactos,
+por lo que si la agenda está llena
+al elegir esta opción se le indicará
+dicha circunstancia y se volverá a
+mostrar el menú
+
+• Eliminar contacto. Se solicita la
+posición del contacto y se borrará
+de la agenda. Si la posición no
+existe, se indicará un mensaje de
+advertencia
+
+• Buscar contacto. Se solicita la
+posición del contacto y se mostrará
+el nombre que la ocupa. Si la
+posición no existe, se indicará un
+mensaje de advertencia
+Tras ejecutar cada acción, volverá a
+mostrarse el menú hasta que se elija
+salir.
+
+NOTA.: Para eliminar un elemento de
+la agenda, se sobrescribe el elemento
+a eliminar con el siguiente y la misma
+operación se realiza con los siguientes
+elementos hasta el último.
+
+Agenda de contactos
+
+INICIO
+
+int numeroDeOpcion=0;
+bollean Salida = false;
+Agenda agenda= new Agenda();
+
+agenda.mostrarMenu();
+
+agenda.eligeOpcion(int numeroDeOpcion);
+
+
+
+public class Agenda()
+{
+
+	int idContacto=0;
+	String Contacto;
+	Array listaDeContactos;
+	final int maxCantidad=20;
+	Agenda agenda;
+
+
+	Agenda(int idContacto,String Contacto)
+	{
+
+	}
+
+	mostrarMenu()
+	{
+		mostrar "1.- Añadir contacto"
+        mostrar "2.- Eliminar contacto"
+        mostrar "3.- Buscar contacto"
+        mostrar "4.- Salir"
+	}
+
+
+
+	eligeOpcion(int numeroDeOpcion)
+	{
+ 	while(salida=false)
+ 	{
+		mostrar "Introduce numero de opcion que te interesa."
+	
+		leer numeroDeOpcion;
+	
+		switch(numeroDeOpcion)
+		{
+			case 1 : leer nombre
+			agenda.anadirContacto;
+			break;
+
+			case 2 :leer idContacto;
+			agenda.eliminarContacto;
+			break;
+
+			case3: leer idContacto;
+			contacto=agenda.buscarContatco(idContacto);
+			break;
+
+			case4 : salida=true;
+			mostrar "Hasta luego,nos vemos pronto!"
+
+			default:
+			"Lo siento,el numero de Opcion que has elegido no esta correcto, prueba otra vez!"
+		}
+	}
+
+
+	anadirContacto(String Nombre)
+	{
+		if(maxCantidad<idContacto)
+		{
+		idContacto++;
+		listaDeContactos[idContacto]=nombre;
+		}
+
+		else{
+		mostrar " Lo siento, pero hay demasiada gente en la lista"
+		}
+
+	}
+
+	eliminarContacto(int idContacto)
+	{
+		leer int contactoParaEliminar;
+		if(idContador==contactoParaEliminar)
+		{
+			listaDeContactos[idContacto]=delete;
+		}
+		else
+		{
+		mostrar "La posicion no existe";
+		}
+
+	}
+
+	String buscarContacto(int idContacto)
+	{
+
+		leer int contactoBuscado;
+		if(idDeContactos==contactoBuscado)
+		{
+		return String listaDeContactos[idDeContacto];
+		}
+		else
+		mostar "Contacto no existe!"
+	}
+
+	
+}

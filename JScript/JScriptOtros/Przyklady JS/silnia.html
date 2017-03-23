@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>silnia</title>
+</head>
+<body>
+ <input type="text" id="liczba"/>
+<button onclick="silnia()">Policz silnie!</button><br/>
+<input type="text" id="liczba2"/>
+
+<script type="text/javascript">
+
+function silnia()
+{
+        wynik = 1;
+        n = document.getElementById("liczba").value;
+        while (n > 0 )
+        {
+                wynik = wynik * n;
+                n = n - 1; 
+        }
+        document.getElementById("liczba2").value = wynik;
+}
+
+</body>
+</html>

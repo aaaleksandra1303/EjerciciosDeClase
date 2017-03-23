@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+<head>
+    <title>Amigos</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" ></script>
+    <style type="text/css">
+        li{
+            list-style: none;
+            padding-bottom: 15px;
+
+        }
+        h2{
+            display: inline-block;
+        }
+    </style>
+    
+</head>
+<body>
+    <script type="text/javascript">
+    /*
+    var amigos = [
+        {'name':'JOHN','age':'25' },
+        {'name':'JESSIE','age':'30' },
+        {'name':'JOHANNA','age':'28' },
+        {'name':'JOY','age':'15' },
+        {'name':'MARY','age':'28' },
+        {'name':'PETER','age':'95' },
+        {'name':'SEBASTIAN','age':'50' },
+        {'name':'ERIKA','age':'27' },
+        {'name':'PATRIK','age':'40' },
+        {'name':'SAMANTHA','age':'60' }
+
+
+
+    ];
+
+    
+
+    </script>
+
+    <h2>I have {{people.length}} friends. They are:  </h2>
+   
+    <input type="text" name="" placeholder="filter friends" ng-model="name" >
+    <br>
+    
+
+   
+    
+        <ul ng-init="people=[{'name':'JOHN','age':'25' },
+        {'name':'JESSIE','age':'30' },
+        {'name':'JOHANNA','age':'28' },
+        {'name':'JOY','age':'15' },
+        {'name':'MARY','age':'28' },
+        {'name':'PETER','age':'95' },
+        {'name':'SEBASTIAN','age':'50' },
+        {'name':'ERIKA','age':'27' },
+        {'name':'PATRIK','age':'40' },
+        {'name':'SAMANTHA','age':'60' }]">
+
+        <li ng-repeat = "person in people|filter:name">
+            [ {{$index + 1}} ] {{person.name}} who is {{person.age}} years
+        </li>
+    </ul>
+
+</body>
+</html>

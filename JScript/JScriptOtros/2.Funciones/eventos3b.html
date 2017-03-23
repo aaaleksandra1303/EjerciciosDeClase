@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>eventos como functiones exteras</title>
+	<script type="text/javascript">
+		
+		function muestra(){
+			alert('Gracias');
+		}
+		function resaltar(elemento){
+			switch(elemento.style.borderColor){
+				case onmouseover: this.style.borderColor='green';
+								break;
+				case onmouseout:this.style.borderColor='red';
+								break;
+
+				default: this.style.borderColor='blue';
+
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<div 
+		id="contenido" style="width: 180px;height: 80px;border:thin solid silver" 
+		onmouseover="resultar(this);" 
+		onmouseout="resultar(this)">
+		Seccion de contenidos...
+	</div>
+
+
+
+</body>
+</html>

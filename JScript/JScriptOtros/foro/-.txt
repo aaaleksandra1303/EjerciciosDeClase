@@ -1,0 +1,4 @@
+var parrafos = document.getElementsByTagName("p");
+	for (i=0; i<parrafos.length; i++){
+		alert(parrafos[i].textContent)
+	}

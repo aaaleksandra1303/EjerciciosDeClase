@@ -1,0 +1,7 @@
+//Creamos nuevo elemento del body, un p
+	var nuevoP = document.createElement("p");	
+	//Mostramos una ventan para que el ususario introduzca un nuevo párrafo y lo 
+	//metemos dentro de el nuevo elemento p
+	nuevoP.innerHTML = prompt("Introduce el nuevo párrafo: ");
+	//Ahora agregamos el nuevo elemento p a el body
+	document.getElementById("wrapper").appendChild(nuevoP);

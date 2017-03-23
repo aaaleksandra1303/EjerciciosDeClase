@@ -1,0 +1,33 @@
+http://www.brewerydb.com/developers/docs 
+1.Que es una API?
+
+
+http://how2html.pl/jezyk-css/
+http://www.kurshtmlcss.pl/jak-zrobic-strone-internetowa/szablon-strony.php
+
+hacer una lista con emmet:
+ul>li*5>lorem10
+
+
+caso practico html: hacer juna tabla 
+table>(thead>tr>th{Numeros del 1 al 100})+(tbody>tr*10>td{$}*10)
+
+Emmet:
+http://docs.emmet.io/actions/expand-abbreviation/
+
+np. ul>li.item$*5
+
+
+table>
+(thead>tr>th)+
+(tbody>
+	(tr>td{$}*10)+
+	(tr>td{$@11}*10)+
+	(tr>td{$@21}*10)+
+	(tr>td{$@31}*10)+
+	(tr>td{$@41}*10)+
+	(tr>td{$@51}*10)+
+	(tr>td{$@61}*10)+
+	(tr>td{$@71}*10)+
+	(tr>td{$@81}*10)+
+	(tr>td{$@91}*10))	

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>DocumntDOM</title>
+	<meta charset="utf-8">
+	
+</head>
+
+
+<body>
+<script type="text/javascript">
+		
+		
+	
+	var cadena=prompt("Introduce la palabra");
+	
+	
+
+	
+	
+
+
+
+
+
+
+
+		function isPalindromo(cadena)
+		{
+			var palabras=cadena.split();
+			var palabra=palabras.join();
+			alert("1");
+
+
+
+			for(i=0;i<=palabra.length;i++)
+			{
+
+				for(j=palabra.length;j>=0;i--)
+				{
+					if(palabra.charAt(i)==palabra.charAt(j))
+					{
+						alert("esPalindromo");
+						return true;
+					}
+					else{
+						alert("noEsPalindromo");
+					}
+				}
+			}
+
+			}
+		
+		
+		
+		isPalindromo(cadena);	
+
+
+	</script>
+
+<!--4.Ejercicio 2 
+Funcion para comprobar si un texto es un palinsdromo, Debe devolver true o false.
+"dabale arroz a la zorra l abdad"
+"la ruta natural"-->
+</body>
+</html>

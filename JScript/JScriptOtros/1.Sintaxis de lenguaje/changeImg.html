@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo del Objeto document</title>
+	<script language="JavaScript">
+		var myImages= new Array("usa.jpg","canada.png","jamaica.jpg","mexico.png");
+
+		function changeImg(inmgNumber)
+		{
+			var imgClicked=document.images[inmgNumber];
+			var newImgNumber=Math.round(Math.random()*3);
+			while(imgClicked.src.indexOf(myImages[newImgNumber])!=-1){
+				newImgNumber=Math.round(Math.random()*3);
+
+			}
+			imgClicked.src=myImages[newImgNumber];
+			return false;
+		}
+	</script>
+</head>
+<body>
+	<A HREF="" NAME="linkImg1" onclick="return changeImg(0)">
+	
+	<IMG NAME=img1 SRC="usa.jpg" BORDER=0>
+	</A>
+	<A HREF ="" NAME="linkImg2" onclick="return changeImg(1)">
+	<IMG NAME=img1 SRC="mexico.png" BORDER=0>
+	</A>
+	<A HREF ="" NAME="linkImg3" onclick="return changeImg(2)">
+	<IMG NAME=img1 SRC="canada.png" BORDER=0>
+	</A>
+	<A HREF ="" NAME="linkImg4" onclick="return changeImg(3)">
+	<IMG NAME=img1 SRC="jamaica.jpg" BORDER=0>
+	</A>
+
+
+</body>
+</html>

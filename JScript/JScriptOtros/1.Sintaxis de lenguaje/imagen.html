@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo del Objeto document</title>
+</head>
+<body>
+	<IMG NAME=img1 SRC=" "BORDER=0 WIDTH=200 HEIGHT=150>
+	<script language="JavaScript">
+		var myImages= new Array("use.gif","canada.png","jamaica.jpg","mexico.png");
+		var imgIndex=prompt("Enter a number from 0 to 3","");
+		document.images["img1"].src=myImages[imgIndex];
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html ng-app="encuestaApp">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ 	<title>Cuestionario con AngularJS</title>
+ 	 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js' ></script>
+ 	<script src="encuestaApp.js"></script> 
+	<script src="testController.js"></script> 
+ 
+</head>
+<body>
+	<div id="test" ng-controller="testController">
+		 <h1>Ejemplo de cuestionario utilizando AngularJS</h1>
+ 	<div class="questions">
+ 	<div class="question" ng-repeat="question in questions">{{question.text}}  <!-- coge questions y los mete en question --> 
+ 		 <!-- {{question.text}} sirve para pintar los datos que tengo en el text controller que quiero -->
+ 	<div class="answers" ng-repeat="answer in question.answers"> <!-- answers esta dentro de question y ng-repeat sirve para repetir cada pregunta.  -->
+ 		<input type="radio" ng-model="question.userAnswer" value="{{answer.id}}" 
+ 		name="question-{{question.id}}" id="answer-{{question.id}}-{{answer.id}}"/> {{answer.text}}
+ 		<!-- el value sirve para que id ha sido marcado --> 
+ 		<!-- ng-model  guarda la opcion que el usuario pincha (la respuesta de la pregunta) en userAnswer que tiene valor por defecto null, ahora seria el Id que pinche el usuario --> 
+ 		
+	 </div>
+ 	</div>
+ 	</div>
+ 	<p>Has acertado {{resultado()}} de {{questions.length}}</p>
+	</div>
+</body>
+</html>

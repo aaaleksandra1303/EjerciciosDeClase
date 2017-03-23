@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom3</title>
+	<script type="text/javascript">
+		
+
+		var p1=prompt("Wprowadz pierwsza liczbe");
+		var p2=prompt("Wprowadz druga liczbe");
+
+		function Suma(a,b)
+		{
+			var result=a+b;
+			document.getElementById("demo").innerHTML=result;
+		}
+
+		function Roznica(a,b)
+		{
+			var result=a-b;
+			document.getElementById("Roznica").innerHTML=result;
+		}
+		function changeColor(){
+
+		 document.body.style.backgroundColor = "pink";
+		}
+
+		
+		document.addEventListener("click",function(){
+			Suma(p1,p2);
+		});
+
+		document.addEventListener("click",function(){
+			Roznica(p1,p2);
+		});
+
+
+		document.addEventListener("click", changeColor);
+	</script>
+</head>
+<body>
+<p>Click everywere</p>
+<p>Suma</p> <p id="demo">wynik: </p>
+<br>
+<p>Roznica</p> <p id="Roznica">wynik</p>
+
+</body>
+</html>

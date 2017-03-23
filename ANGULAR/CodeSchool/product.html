@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gemStore"> 
+<head>
+	<meta charset="utf-8">
+	<title>Angular gemStrore</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" ></script>
+	  
+	<script type="text/javascript" src="app.js" ></script>
+	<script type="text/javascript" src="storeController.js" ></script>
+</head>
+<body ng-controller="storeController as store">
+	<div >
+		<h1>{{store.product.name}}</h1>
+		<h2>${{store.product.price}}</h2>
+		<p>{{store.product.description}}</p>
+		<button ng-show="store.product.canPurchase">Add to Cart</button>
+	</div>
+	 
+
+</body>
+</html>

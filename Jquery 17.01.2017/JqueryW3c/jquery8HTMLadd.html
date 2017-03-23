@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add</title>
+	<script type="text/javascript" src="jquery.js" ></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#appendText").click(function(){
+				$("#p1").append("Some appended text.");
+			});
+
+			$("#prependText").click(function(){
+				$("#p2").prepend("Some prepended text.");
+			});
+
+			$("#beforeText").click(function(){
+				$("#p3").before("Some text before");
+			});
+
+			$("#afterText").click(function(){
+				$("#p4").after("Some text after");
+			});
+
+			 $("#btn2").click(function(){
+      		 $("ol").append("<li>Appended item</li>");
+   			 });
+
+
+
+		});
+		
+
+
+	</script>
+</head>
+<body>
+	<p id="p1">1 jakis tekst</p>
+	<button id="appendText">append text</button>
+	<p id="p2">2 jakis tekst</p>
+	<button id="prependText">prependText</button>
+	<p id="p3">3 jakis tekst</p>
+	<button id="beforeText">beforeText</button>
+	<p id="p4">4 jakis tekst</p>
+	<button id="afterText">afterText</button>
+
+
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+<button id="btn2">Append list items</button>
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+</body>
+</html>

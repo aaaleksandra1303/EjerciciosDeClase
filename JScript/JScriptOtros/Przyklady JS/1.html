@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Przyklady JS</title>
+	<script type="text/javascript">
+		/*a = 2;
+	b = 6;
+
+	if (a < b)
+        document.write(a + " jest mniejsze od " + b);
+	else
+        document.write(a + " nie jest mniejsze od " + b);
+
+ */
+    
+    function silnia(n){
+    	wynik=1;
+    	while(n>0)
+    	{
+    		wynik=wynik*n;
+    		n--;
+    	}
+    	alert(wynik);
+    	document.write(wynik);
+    	}
+
+    n=prompt("<br>wprowadz liczbe ");
+    silnia(n);
+
+    function napis(){
+    	document.write("<br>Witaj");
+    }
+    napis();
+
+    function suma(a,b)
+    {
+    	suma=a+b;
+    	document.write("<br>suma "+suma);
+    }
+    suma(3,4);
+
+   
+    	function napisz()
+	{
+        document.getElementById("paragraf2").innerHTML=("<b>ladowanie strony.</b>");
+	}
+    
+
+	</script>
+</head>
+<body >
+
+<p id="paragraf" ></p>
+<p id="paragraf2"onmouseout="napisz"></p>
+
+<script type="text/javascript">
+
+document.getElementById("paragraf").innerHTML=("<b>To jest pierwszy paragraf.</b>");
+
+</script>
+
+</body>
+</html>

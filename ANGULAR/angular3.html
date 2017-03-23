@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es" ng-app>
+<head>
+    <title>Angular </title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" ></script>
+</head>
+<body>
+    <div ng-controller="miControlador">
+        
+        <input type="checkbox" ng-model="si" ng-change="favor()">A favor
+        <input type="checkbox" ng-model="no" ng-change="contra()">En contra
+        <h3>Total Votos: {{total}}</h3>
+
+
+    </div>
+
+</body>
+</html>

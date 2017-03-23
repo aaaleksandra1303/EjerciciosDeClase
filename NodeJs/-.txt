@@ -1,0 +1,16 @@
+switch(pathname){
+		case("/hola"):
+		case("/HOLA"):
+			response.writeHead(200, {'Content-Type': 'text/html'});
+			response.write("hola");
+			break;        	
+	case("/adios"):
+	case("/ADIOS"):
+		response.writeHead(200, {'Content-Type': 'text/html'});
+		response.write("adios");
+		break;
+	default:
+		response.writeHead(404, {'Content-Type': 'text/html'});
+		response.write("Error 404");
+		break;
+	}

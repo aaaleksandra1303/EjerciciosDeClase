@@ -1,0 +1,47 @@
+<html ng-app="angularProducto">
+<header>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular Productos</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+</head> 
+</header>
+<body ng-controller="mainController">
+
+<form action=”http://127.0.0.1:8081/add”
+method=”POST”>
+	<table>
+	<thead>
+		<thead>Productos</thead>
+	</thead>
+	<tbody> 
+		<tr>
+			<td> <label> ID:</label></td>
+			<td> <input type=”number” name=”identificador” ng-model="id"></td>
+		
+		</tr>
+		<tr> 
+			<td> <label>Nombre:</label>  </td>
+			<td> <input type=”text” name=”nombre” id-model="name"><td>
+		</tr>
+		<tr> 
+			<td> <label>Precio:</label>  </td>
+			<td> <input type=”number” name=”precio” ng-model="price"><td>
+		</tr>
+		<tr> 
+			<td> <label>Disponible:</label>  </td>
+			<td> <input type=”checkbox” name=”disponible” ng-model="disponible"><td>
+		</tr>
+		<tr> 
+			<td> <label> </label>  </td>
+			<td> <button type=”submit” value=”Submit” >Submit<td>
+		</tr>
+	
+ </tbody>
+
+ </table>
+</form>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script> <script src="main.js"></script>
+</body>
+</html>

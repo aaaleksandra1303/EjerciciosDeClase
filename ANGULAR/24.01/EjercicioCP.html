@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="encuestaApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta Angular</title>
+    <script type="text/javascript" src="encuestaApp.js" ></script>
+    <script type="text/javascript" src="testController.js" ></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" ></script>
+</head>
+
+<body>
+<div  ng-controller="testController">
+   <div class="question" ng-repeat="question in questions">
+        {{qustions.text}}
+        <ul>
+            <li class="answer" ng-repeat="answer in question.answers">
+            <input type="radio" value= "{{answer.id}}" name="group{{question.id}}" ng-model="user-answer-{{question.input}}">
+             {{answer.text}}
+            </li>
+        </ul>
+        <p>{{"user-answer"+question.id}}</p>
+        
+   </div>
+    
+</div>
+
+</body>
+</html>

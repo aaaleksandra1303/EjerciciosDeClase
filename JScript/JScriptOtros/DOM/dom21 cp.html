@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<ul>
+		<li>1 parafo</li>
+		<li>2 parafo</li>
+		<li>3 parafo</li>
+		<li>4 parafo</li>
+	</ul>
+
+
+<script type="text/javascript">
+	do{
+        var newName = prompt("Introduce un nuevo nombre");
+        if(newName == ""){
+            break;
+        }else{
+            var newElementList = document.createElement("li");
+            newElementList.innerHTML = newName;
+            var listNode = document.getElementsByTagName("ul");
+            listNode[0].appendChild(newElementList);
+        }
+    }while(newName != "")
+</script>
+
+</body>
+</html>

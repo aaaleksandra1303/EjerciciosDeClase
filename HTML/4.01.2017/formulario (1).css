@@ -1,0 +1,33 @@
+label{
+	display: inline-block;
+	padding-top: 10px;
+	width: 200px;
+	border:1px solid #139D92
+
+}
+label.sexo{
+	width: 50px;
+	text-align:right;
+}
+input{
+	border: 3px solid #E5FAF9
+}
+body{
+
+	text-align: center;
+}
+section{
+	display: inline-block;
+	width: 500px;
+	color:#E5FAF9;
+	border: 10px solid #139D92;
+	box-sizing: 500px 500px ;
+	padding: 50px;
+	margin: 30px;
+	margin-bottom: : 50px;
+	background-color: #2AA991;
+	size: 500px;
+	text-align: left;
+	font-family: Arial;
+
+}

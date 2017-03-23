@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Famila</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" ></script>
+        <style type="text/css">
+                li{
+                        list-style: none;
+                }
+        </style>
+</head>
+<body>
+	<h2>Mi familia  {{familia.length}}. They are:</h2>
+	<input type="text" placeholder="filter familia" ng-model="name"></input>
+	<br>
+
+		<ul ng-init="familia=[{'name':'JANUSZ','age':'56' },
+        {'name':'KRYSTYNA','age':'59' },
+        {'name':'AGNIESZKA','age':'29' },
+        {'name':'BOGUS','age':'21' },
+        {'name':'OLA','age':'27' },
+        {'name':'PACO','age':'28' }]">
+
+        	<li ng-repeat ="person in familia|filter:name">
+        	[{{$index+1}}]	{{person.name}} who is {{person.age}} years old
+        	</li>
+        </ul>
+
+
+
+
+</body>
+</html>

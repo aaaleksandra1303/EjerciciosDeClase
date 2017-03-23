@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>event listener</title>
+</head>
+<body>
+
+<p id="demo">data</p>
+	<button id="myBtn">try it</button>
+	<button id="myBtn2">hello world</button>
+	<button id="myBtn3">DisplayAlert</button>
+	<button id="myBtn4">All alerts</button>
+
+	<script type="text/javascript">
+		
+		document.getElementById("myBtn").addEventListener("click", displayDate);
+		document.getElementById("myBtn2").addEventListener("click",function(){alert("hello world");});
+		document.getElementById("myBtn3").addEventListener("click",displayAlert);
+		var x=document.getElementById("myBtn4");
+		x.addEventListener("click",displayDate);
+		x.addEventListener("click",displayAlert);
+	
+	function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+	}
+	function displayAlert() {
+		alert("hej hej hej!");
+	}
+
+	</script>
+
+</body>
+</html>

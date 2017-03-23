@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>lista ng repeat</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" ></script>
+	<script src="lista.js"></script>
+</head>
+<body>
+	<div ng-controller="miControlador" >
+		
+		<div ng-init="lista"
+		<ul>
+			<li ng-repeat="a in lista">
+			{{a.nombre}}:{{a.edad}} anos
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

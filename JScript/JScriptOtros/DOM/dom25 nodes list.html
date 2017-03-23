@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>node list</title>
+</head>
+<body>
+	<h1 id="h1">przyklad listy</h1>
+		<ul id="ul">
+			<li>ffsdf</li>
+			
+		</ul>
+
+		<script type="text/javascript">
+			var para = document.createElement("li");
+			var node=document.createTextNode(" wprowadz tekst");
+			para.appendChild(node);
+
+			var element = document.getElementById("ul");
+			element.appendChild(node);
+		</script>
+
+</body>
+</html>

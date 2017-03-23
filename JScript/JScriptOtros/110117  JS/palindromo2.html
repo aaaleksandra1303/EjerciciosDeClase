@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Es polindormo2</title>
+	<script type="text/javascript">
+
+	 var palabra=prompt("Introduce palabra");
+	 palindromo='';
+	 palabra=palabra.toLowerCase();
+	 lower=palabra.replace("");
+
+	 	for(var i =lower.length -1;i>=0;i--)
+	 	{
+	 		palindromo=palindromo+lower[i];
+	 	}
+
+	 	if(lower==palindromo)
+	 	{
+	 		alert("palabra es palindromo");
+	 	}else{
+	 		alert("palabra no es palindromo");
+	 	}
+		
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

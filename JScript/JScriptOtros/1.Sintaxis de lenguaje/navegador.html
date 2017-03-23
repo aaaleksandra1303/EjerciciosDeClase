@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo del Objeto el navegador</title>
+	<script language="JavaScript">
+		
+		function getBroswerName(){
+			var IsBroswer =navigator.appName;
+
+			if(IsBroswer.indexOf("Microsoft")>=0){
+				IsBroswer="MSIE";
+
+			}else if (IsBroswer.indexOf.("Netscape")>=0) {
+				IsBroswer="NETSCAPE";
+			}
+			else{
+				IsBroswer="UNKNOWN";
+
+			}
+			return IsBroswer;
+		}
+
+
+		function getOS(){
+			var userPlat=navigator.userAgent;
+				if(navInfo.indexOf("windows NT")!=-1)
+					|| (navInfo.indexOf("windows 95")!= -1)
+					|| (navInfo.indexOf("windows 98")!= -1)
+					|| (navInfo.indexOf("WinNT")!= -1)
+					|| (navInfo.indexOf("Win95")!= -1)
+					|| (navInfo.indexOf("Win98")!= -1)){
+					userPlat="Win32";
+				}else if(navInfo.indexOf("Win16")!=-1){
+					userPlat=
+				}
+}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

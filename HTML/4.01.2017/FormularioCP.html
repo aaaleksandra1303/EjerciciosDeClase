@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FormularioCP</title>
+	<link rel="stylesheet" type="text/css" href="Formulario.css">
+</head>
+<body>
+	<section>
+	<h1>Formulario del usuario</h1>
+    <form method="GET">
+
+	 	<label for="name">Nombre del usuario:</label>
+	 	<input type="text" name="login" title="Pon nombre del usuario">
+	 	<br>
+	 	<label for="name">Nombre:</label>
+	 	<input type="text" name="nombre" title="Dime como te llamas">
+	 	<br>
+	 	<label for="nombre">Apellido:</label>
+	 	<input type="text" name="apellido" title="Introduzca apellido">
+	 	<br>
+	 	<label for="email">Email</label>
+		<input type="email" name="email" placeholder="email@gmail.com">
+		<br>
+	 	<label for="nombre">Contrasena:</label>
+	 	<input type="password" name="contrasena" placeholder="Contrasena" maxlength="9" required="" title="Contrasena">
+	 	<br>
+	 	<label for="nombre">Repite contrasena:</label>
+	 	<input type="password" name="contrasena" placeholder="Repite contrasena" maxlength="9" required="" title="Repite Contrasena">
+	 	<br>
+	 	<label for="name"> Sexo:</label>
+	 	<label class="sexo">f</label><input type="radio" name="sexo" value="f"">
+	 	<label class="sexo">m</label><input type="radio" name="sexo" value="m">
+	 	<br>
+	 	<label>Provincia:</label>
+	 	<select>
+	 		<optgroup label="Comunidad Valenciana">
+	 			<option>Alicante</option>
+	 			<option>Valencia</option>
+	 			<option>Alcoy</option>
+	 		</optgroup>
+
+
+	 	</select>
+	 	<br>
+	 	
+		
+	 		
+	 	<label>Edad</label>
+	 	<input type="range" name="" value="100">
+	 	<br>
+
+	 	<input type="submit" name="Enviar" value="Enviar">
+	 	<input type="reset" name="Borrar" value="Borrar">
+</section>
+	</form>
+
+
+
+
+
+	
+</body>
+</html>
